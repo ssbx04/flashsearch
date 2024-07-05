@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CompareHashHash</class>
+ <widget class="QDialog" name="CompareHashHash">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1776</width>
+    <height>1034</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FlashSeach</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../../Downloads/logo.png</normaloff>../../../../../../Downloads/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: rgb(20,20,20);
+}</string>
+  </property>
+  <widget class="QComboBox" name="choixFunFuncCmp2">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>70</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+	selection-background-color: transparent;
+	background-color: rgb(20, 20, 20);
+	selection-color : rgb(246,182,24);
+	color : rgb(246,182,24);
+	font-size : 30px;
+
+}
+QComboBox QAbstractItemView {
+	color : rgb(246,182,24);
+selection-background-color: rgb(246,182,24);
+selection-color : rgb(0,0,0);
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Fonction 1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fonction 2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fonction 3</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>70</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color : rgb(246,182,24);
+	background-color: rgba(0,0,0,0);
+	font-size:30px;
+}</string>
+   </property>
+   <property name="text">
+    <string>VS</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>40</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color : rgb(246,182,24);
+	background-color: rgba(0,0,0,0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Choix de la fonction</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_38">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>30</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../../../../../Downloads/logo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="choixFunFuncCmp">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>70</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+	selection-background-color: transparent;
+	background-color: rgb(20, 20, 20);
+	selection-color : rgb(246,182,24);
+	color : rgb(246,182,24);
+	font-size : 30px;
+
+}
+QComboBox QAbstractItemView {
+	color : rgb(246,182,24);
+selection-background-color: rgb(246,182,24);
+selection-color : rgb(0,0,0);
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Fonction 1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fonction 2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fonction 3</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_39">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>28</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+font: 700 16pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Comparaison Fonctions</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>40</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color : rgb(246,182,24);
+	background-color: rgba(0,0,0,0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Choix de la fonction</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_comparer2">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>990</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color : rgb(246,182,24);
+	font-size : 20px;
+	color : rgb(0,0,0);
+	border-radius : 10px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Comparer</string>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="plot2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>190</y>
+     <width>1671</width>
+     <height>751</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>80</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Fonction1 :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>110</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Fonction2 :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>140</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Fonction3 :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>80</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	background-color: rgb(255, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>110</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	background-color: rgb(0, 255, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>140</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	background-color: rgb(0, 0, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

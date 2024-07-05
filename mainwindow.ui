@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FlashSearch</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../../Downloads/logo.png</normaloff>../../../../../../Downloads/logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(20, 20, 20);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Accueil">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>30</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../Downloads/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>33</y>
+        <width>331</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+font: 700 36pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>FlashSearch</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>100</y>
+        <width>501</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+font: italic 7pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&quot;Rapidité ultime, résultats exceptionnels : Votre structure, trouvée en une fraction de secondes.&quot;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtHashFunction">
+      <property name="geometry">
+       <rect>
+        <x>445</x>
+        <y>345</y>
+        <width>271</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Aucune</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>350</y>
+        <width>361</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Fonction Hash en cours :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtCharge">
+      <property name="geometry">
+       <rect>
+        <x>495</x>
+        <y>260</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Non chargée</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>270</y>
+        <width>451</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Etat de la base de données : </string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Insertion">
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>115</x>
+        <y>48</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+font: 700 16pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Inserér Structure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../Downloads/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>45</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(20, 20, 20,0);
+color: rgb(255,255,255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>← </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineMatriInsert">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>120</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border : 2px solid rgb(246,182,24);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	padding-left : 15px;
+	font-size : 18px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineNomiInsert">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>200</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border : 2px solid rgb(246,182,24);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	padding-left : 15px;
+	font-size : 18px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineSecteurInsert">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>280</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border : 2px solid rgb(246,182,24);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	padding-left : 15px;
+	font-size : 18px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineSiteInsert">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>360</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border : 2px solid rgb(246,182,24);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	padding-left : 15px;
+	font-size : 18px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_inserer">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>580</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color : rgb(246,182,24);
+	font-size : 20px;
+	color : rgb(0,0,0);
+	border-radius : 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Insérer</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="lineDescInsert">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>440</y>
+        <width>451</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPlainTextEdit {
+	border : 2px solid rgb(246,182,24);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	padding-left : 15px;
+	font-size : 18px;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Supression">
+     <widget class="QPushButton" name="backSupp">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>45</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(20, 20, 20,0);
+color: rgb(255,255,255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>← </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>115</x>
+        <y>48</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+font: 700 16pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer Structure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../Downloads/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_supprimer">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>320</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color : rgb(246,182,24);
+	font-size : 20px;
+	color : rgb(0,0,0);
+	border-radius : 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineMatSupp">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>250</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border : 2px solid rgb(246,182,24);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	padding-left : 15px;
+	font-size : 18px;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Recherche">
+     <widget class="QLineEdit" name="lineMatRec">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>150</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border : 2px solid rgb(246,182,24);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	padding-left : 15px;
+	font-size : 18px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>115</x>
+        <y>48</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+font: 700 16pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Rechercher Structure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_rechercher">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>220</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color : rgb(246,182,24);
+	font-size : 20px;
+	color : rgb(0,0,0);
+	border-radius : 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backRec">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>45</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(20, 20, 20,0);
+color: rgb(255,255,255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>← </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../Downloads/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="res_no_mat">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>330</y>
+        <width>841</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="res_nom">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>380</y>
+        <width>841</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="res_secteur">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>430</y>
+        <width>841</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="res_site">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>480</y>
+        <width>841</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="res_desc">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>530</y>
+        <width>840</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Afficher">
+     <widget class="QPushButton" name="backAff">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>45</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(20, 20, 20,0);
+color: rgb(255,255,255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>← </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>118</x>
+        <y>48</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+font: 700 16pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Afficher Base</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../Downloads/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableView" name="DisplayBDD">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>100</y>
+        <width>841</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{
+	color: rgb(255,255,255);
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Taille">
+     <widget class="QPushButton" name="backSize">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>45</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(20, 20, 20,0);
+color: rgb(255,255,255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>← </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>135</x>
+        <y>48</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+font: 700 16pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Taille Base</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>50</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../Downloads/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>270</y>
+        <width>551</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Taille actuel de la base de données : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="txtTaille">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>277</y>
+        <width>63</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	background-color : rgba(0,0,0,0);
+	color : rgb(246,182,24);
+	font-size: 30px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Aide">
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>40</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	font: 22pt &quot;MS Shell Dlg 2&quot;;
+	background-color : rgba(0,0,0,0);
+color: rgb(246,182,24);
+}</string>
+      </property>
+      <property name="text">
+       <string>Aide</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>951</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	font: 16pt &quot;MS Shell Dlg 2&quot;;
+	background-color : rgba(0,0,0,0);
+	color: rgb(255,255,255);
+}</string>
+      </property>
+      <property name="text">
+       <string>- Placer le ficher database.bd dans le répertoire Documents de votre ordinateur.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>370</y>
+        <width>951</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	font: 16pt &quot;MS Shell Dlg 2&quot;;
+	background-color : rgba(0,0,0,0);
+	color: rgb(255,255,255);
+}</string>
+      </property>
+      <property name="text">
+       <string>- Assurez vous de charger la base avant les opérations sur les structures.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>951</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	font: 16pt &quot;MS Shell Dlg 2&quot;;
+	background-color : rgba(0,0,0,0);
+	color: rgb(255,255,255);
+}</string>
+      </property>
+      <property name="text">
+       <string>- Sauvegardez la base après les opérations sur les structures.</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Comparaison2"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBase">
+    <property name="title">
+     <string>Base</string>
+    </property>
+    <addaction name="actionCharger"/>
+    <addaction name="actionAfficher"/>
+    <addaction name="actionTaille"/>
+    <addaction name="actionSauvegarder"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuStructure">
+    <property name="title">
+     <string>Structure</string>
+    </property>
+    <addaction name="actionRechercher"/>
+    <addaction name="actionInserer"/>
+    <addaction name="actionSupprimer"/>
+   </widget>
+   <widget class="QMenu" name="menuFonctions_de_hachage">
+    <property name="title">
+     <string>Fonctions de hachage</string>
+    </property>
+    <addaction name="actionFonction_1"/>
+    <addaction name="actionFonction_2"/>
+    <addaction name="actionFonction_3"/>
+    <addaction name="actionSans_Hachage"/>
+   </widget>
+   <widget class="QMenu" name="menuCourbes_de_comparaison">
+    <property name="title">
+     <string>Courbes de comparaison</string>
+    </property>
+    <addaction name="actionHachage_Sans_Hachage"/>
+    <addaction name="actionHachage_fi_Hachage_fj"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionPage_Aide"/>
+   </widget>
+   <addaction name="menuBase"/>
+   <addaction name="menuStructure"/>
+   <addaction name="menuFonctions_de_hachage"/>
+   <addaction name="menuCourbes_de_comparaison"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <action name="actionCharger">
+   <property name="text">
+    <string>Charger</string>
+   </property>
+  </action>
+  <action name="actionAfficher">
+   <property name="text">
+    <string>Afficher</string>
+   </property>
+  </action>
+  <action name="actionTaille">
+   <property name="text">
+    <string>Taille</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder">
+   <property name="text">
+    <string>Sauvegarder</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionRechercher">
+   <property name="text">
+    <string>Rechercher</string>
+   </property>
+  </action>
+  <action name="actionInserer">
+   <property name="text">
+    <string>Inserer</string>
+   </property>
+  </action>
+  <action name="actionSupprimer">
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+  </action>
+  <action name="actionFonction_1">
+   <property name="text">
+    <string>Fonction 1</string>
+   </property>
+  </action>
+  <action name="actionFonction_2">
+   <property name="text">
+    <string>Fonction 2</string>
+   </property>
+  </action>
+  <action name="actionFonction_3">
+   <property name="text">
+    <string>Fonction 3</string>
+   </property>
+  </action>
+  <action name="actionSans_Hachage">
+   <property name="text">
+    <string>Sans Hachage</string>
+   </property>
+  </action>
+  <action name="actionHachage_Sans_Hachage">
+   <property name="text">
+    <string>Hachage/ Sans Hachage</string>
+   </property>
+  </action>
+  <action name="actionHachage_fi_Hachage_fj">
+   <property name="text">
+    <string>Hachage(fi) / Hachage(fj)</string>
+   </property>
+  </action>
+  <action name="action41_98_255">
+   <property name="text">
+    <string>41, 98, 255</string>
+   </property>
+  </action>
+  <action name="action41_98_256">
+   <property name="text">
+    <string>41, 98, 255</string>
+   </property>
+  </action>
+  <action name="actionPage_Aide">
+   <property name="text">
+    <string>Page Aide</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
